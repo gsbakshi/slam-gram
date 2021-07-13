@@ -1,0 +1,14 @@
+
+Hope you enjoy your new logo, here are the people that
+made your beautiful logo happen :)
+font name: Fonarto
+font link: https://www.behance.net/gallery/20085723/Fonarto-Typeface
+font author: Arwan Sutanto
+font author site: http://artonedigital.com/
+
+
+icon designer: Charlie Isslander
+icon designer link: /charlieissland
+        
+{"bg":"#00242B","icon":"#7DE38D","font":"#7DE38D","slogan":"#91f7a1"}
+      
