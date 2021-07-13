@@ -1,0 +1,23 @@
+$user-icon-url: 'https://github.com/gsbakshi/slam-gram/blob/main/src/assets/user.png';
+
+$icon-size: 32px;
+
+.upload-icon-container {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+  .upload-icon {
+    width: $icon-size;
+    height: $icon-size;
+    border-radius: $icon-size;
+    background-image: url('../../assets/upload.png');
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: $icon-size;
+  }
+}
