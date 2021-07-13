@@ -8,8 +8,12 @@ import AnimatedArrow from '../animated-arrow/animated-arrow.component';
 const AccountDropdown = ({ currentUser, toggleUser }) => (
     <div className='account-dropdown'>
         <div className='dropdown-items'>
-            <span className='message'>Click on the button to { currentUser ? 'Logout' : 'Login' }</span>
-            <span className='note'>This is just a simulated fuctionality and not an actual onboarding process.</span>
+            <span className='message'>
+                Click on the button to { currentUser ? 'Logout' : 'Login' }
+            </span>
+            <span className='note'>
+                This is just a simulated fuctionality and not an actual onboarding process.
+            </span>
         </div>
         <AnimatedArrow down />
         <CustomButton onClick={ () => toggleUser() } >
