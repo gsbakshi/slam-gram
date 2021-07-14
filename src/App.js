@@ -23,6 +23,7 @@ const App = () => {
     console.log('Toggle Current User');
     setCurrentUser(!currentUser);
     console.log('Exit Toggle Current User');
+    // toggleAccountDropdownHidden();
   };
 
   return (

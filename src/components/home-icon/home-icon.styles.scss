@@ -1,18 +1,18 @@
 $icon-size: 32px;
 
-.upload-icon-container {
+.home-icon-container {
   width: 45px;
   height: 45px;
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 
-  .upload-icon {
+  .home-icon {
     width: $icon-size;
     height: $icon-size;
     border-radius: $icon-size;
-    background-image: url('../../assets/cloud.png');
+    background-image: url('../../assets/home.png');
     background-repeat: no-repeat;
     background-position: center; 
     background-size: $icon-size;
