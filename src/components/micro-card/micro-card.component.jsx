@@ -7,18 +7,18 @@ const MicroCard = ({ user }) => (
         <div className='user-icon-container'>
             {
                 user ? (
-                    <img className='user-icon' src={ user.avatar } alt='user' />
+                    <img className='user' src={ user.avatar } alt='user' />
                 ) : (
-                    <div className='na-user' />
+                    <div className='na user' />
                 )
             }
         </div>
         <div className='user-details'>
             <div className='username'>
-                { user ? user.username : 'username' }
+                { user.username }
             </div>
             <div className='name'>
-                { user ? user.name : 'name' }
+                { user.name }
             </div>
         </div>
     </div>

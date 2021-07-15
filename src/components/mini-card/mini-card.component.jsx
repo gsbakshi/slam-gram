@@ -8,7 +8,7 @@ import FollowButton from '../follow-button/follow-button.component';
 const MiniCard = ({ user, toggleFollow }) => (
     <div className='mini-card-container'>
         <MicroCard user={ user } />
-        <FollowButton user={user} toggleFollow={toggleFollow} />
+        <FollowButton user={ user } toggleFollow={ toggleFollow } />
     </div>
 );
 

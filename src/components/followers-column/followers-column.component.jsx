@@ -19,22 +19,15 @@ const FollowersColumn = ({ users }) => (
             </div>
             <div className='top-followers'>
                 <p>Your top accounts</p>
-                {/* TODO */}
                 {
-                    users ?
-                        users.map(
+                    users && users.map(
                         user => (
                             <MicroCard
-                                key={ user.id } user={ user }
+                                key={ user.id }
+                                user={ user }
                             />
                         )
-                        ) : (
-                            <>
-                            <MicroCard />
-                            <MicroCard />
-                            <MicroCard />
-                            <MicroCard />
-                            </>
+                        
                     )
                 }
             </div>

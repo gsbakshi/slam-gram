@@ -12,21 +12,15 @@ const SuggestedBox = ({ suggestedUsers, toggleFollow }) => (
             </div>
             <div className='suggested-users'>
                 {
-                    suggestedUsers ?
-                        suggestedUsers.map(
-                            user => (
-                                <MiniCard
-                                    key={ user.id }
-                                    user={ user }
-                                    toggleFollow={ toggleFollow }
-                                />
-                            )
-                        ) : (
-                            <>
-                                <MiniCard />
-                                <MiniCard />
-                            </>
+                    suggestedUsers.map(
+                        user => (
+                            <MiniCard
+                                key={ user.id }
+                                user={ user }
+                                toggleFollow={ toggleFollow }
+                            />
                         )
+                    )
                 }
             </div>
         </div>

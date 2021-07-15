@@ -5,19 +5,12 @@ import './follow-button.styles.scss';
 const FollowButton = ({ user, toggleFollow }) => (
     <div
         className={ `
-            ${user ? 'followed-button' : 'follow-button'} 
+            ${user.is_followed ? 'followed-button' : 'follow-button'}
             button-container
             `}
-        // TODO
-    // onClick={ () => toggleFollow(user) }
+        onClick={ () => toggleFollow(user) }
     >
-        {
-            user ? (
-                user.is_followed ? 'Following' : 'Follow'
-            ) : (
-                'Follow'
-            )
-        }
+        { user.is_followed ? 'Following' : 'Follow' }
     </div>
 );
 

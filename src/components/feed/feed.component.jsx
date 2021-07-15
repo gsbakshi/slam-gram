@@ -1,18 +1,22 @@
 import React from 'react';
+
+import './feed.styles.scss';
+
 import FeedCard from '../feed-card/feed-card.component';
 
-const Feed = () => (
-    // TODO
+const Feed = ({ users, toggleFollow }) => (
     <div className='feed'>
-        <FeedCard />
-        <FeedCard />
-        {/* { descendingUsers.map((descendingUser, index) => (
-            <Card
-                key={ index }
-                user={ descendingUser }
-                toggleFollow={ userToToggle => setUserToToggle(userToToggle) }
-            />
-        )) } */}
+        {
+            users.map(
+                (user, index) => (
+                    <FeedCard
+                        key={ user.id }
+                        user={ user }
+                        toggleFollow={ toggleFollow }
+                    />
+                )
+            )
+        }
     </div>
 );
 
