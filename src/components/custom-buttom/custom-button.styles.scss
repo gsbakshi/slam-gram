@@ -21,14 +21,14 @@
   }
 
   &.alternate {
-    background-color: #7DE38D;
-    color: #00242B;
-    border: 1px solid black;
-
+    background-color: black;
+    color: #7DE38D;
+    border: none;
+    
     &:hover {
-      background-color: black;
-      color: #7DE38D;
-      border: none;
+      background-color: #7DE38D;
+      color: #00242B;
+      border: 1px solid black;
     }
   }
 }
