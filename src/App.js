@@ -36,8 +36,24 @@ const App = () => {
       />
       <div className='page'>
         <Switch>
-          <Route exact path='/' component={ HomePage } />
-          <Route eaxct path="/upload" component={ UploadPage } />
+          <Route exact path='/'
+            render={
+              () => currentUser ? (
+                <HomePage />
+              ) : (
+                <Redirect to='/login' />
+              )
+            }
+          />
+          <Route exact path="/upload"
+            render={
+              () => currentUser ? (
+                <UploadPage />
+              ) : (
+                  <Redirect to='/login' />
+              )
+            }
+          />
           <Route exact path="/login"
             render={
               () => currentUser ? (
