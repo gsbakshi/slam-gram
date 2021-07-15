@@ -1,0 +1,42 @@
+.upload-page-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 7em;
+    
+    .page-header {
+        h1 {
+            margin: 0;
+            padding: 0;
+            font-size: 40px;
+        }
+        p {
+            color: #f5f5f5;
+            opacity: 0.6;
+            font-size: 14px;
+        }
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        .image-upload {
+            width: 27em;
+            height: 16em;
+            background-color: #0F3137;
+            border-radius: 10px;
+            border: 2px solid rgba(227, 227, 228, 0.062);
+            border-radius: 10px;
+        }
+        
+        .form-section {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+    }
+}
