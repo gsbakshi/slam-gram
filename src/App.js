@@ -1,29 +1,29 @@
 import React, {useState} from 'react';
-import { Switch, Route} from 'react-router-dom';
+import { Switch, Route, Redirect, useHistory } from 'react-router-dom';
 
 import './App.css';
 
 import Header from './components/header/header.component';
 import HomePage from './page/homepage/homepage.component';
 import UploadPage from './page/upload-page/upload-page.component';
+import LoginPage from './page/login-page/login-page.component';
 
 const App = () => {
+
+  let history = useHistory();
 
   const [currentUser, setCurrentUser] = useState(true);
   
   const [hidden, setHidden] = useState(true);
 
-  const toggleAccountDropdownHidden = () => {
-    console.log('Toggle Account Dropdown');
-    setHidden(!hidden);
-    console.log('Exit Toggle Account Dropdown');
-  };
-
+  const toggleAccountDropdownHidden = () => setHidden(!hidden);
+  
   const toggleCurrentUser = () => {
-    console.log('Toggle Current User');
     setCurrentUser(!currentUser);
-    console.log('Exit Toggle Current User');
-    // toggleAccountDropdownHidden();
+    if (currentUser) {
+      history.push('/login');
+      toggleAccountDropdownHidden();
+    }
   };
 
   return (
@@ -37,7 +37,16 @@ const App = () => {
       <div className='page'>
         <Switch>
           <Route exact path='/' component={ HomePage } />
-          <Route path="/upload" component={ UploadPage } />
+          <Route eaxct path="/upload" component={ UploadPage } />
+          <Route exact path="/login"
+            render={
+              () => currentUser ? (
+                <Redirect to='/' />
+              ) : (
+                  <LoginPage toggleUser={ toggleCurrentUser } />
+              )
+            }
+          />
         </Switch>
       </div>
     </div>
