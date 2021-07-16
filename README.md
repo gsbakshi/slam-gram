@@ -1,5 +1,5 @@
 <!--- STARTEXCLUDE --->
-# Todos with AstraDB 📒
+# Slam`Gram - A Tik Tok Clone
 
 <!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/3453c8b9-27ca-4c74-9bc8-929efc89512e/deploy-status)](https://app.netlify.com/sites/astra-todos/deploys) -->
 
