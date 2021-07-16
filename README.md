@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+<!--- STARTEXCLUDE --->
+# Todos with AstraDB 📒
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/3453c8b9-27ca-4c74-9bc8-929efc89512e/deploy-status)](https://app.netlify.com/sites/astra-todos/deploys) -->
 
-## Available Scripts
+#
 
-In the project directory, you can run:
+A simple Tik-Tok clone in React running on Astra DB that leverages the Document API.
 
-### `yarn start`
+<!--- ENDEXCLUDE --->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+![image](https://github.com/gsbakshi/slam-gram/blob/main/images/Screenshot%202021-07-17%20at%202.32.45%20AM.png)
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `yarn test`
+## Table of contents
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. [Objectives](#objectives)
+2. [Features](#features)
+3. [Issues](#issues)
 
-### `yarn build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## :dart: Objectives
+* Deploy a TikTok clone to production
+* Learn how to use the **@astrajs** document API to quickly and easily interact with JSON documents
+* Leverage Netlify and DataStax AstraDB
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+[🏠 Back to Table of Contents](#table-of-contents)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `yarn eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## :gem: Features
+* View **videos** in feed from users
+* Create a **Video Post**
+* **Follow** or **UnFollow** a user
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![image](https://github.com/gsbakshi/slam-gram/blob/main/images/Screenshot%202021-07-17%20at%202.32.39%20AM.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+![image](https://github.com/gsbakshi/slam-gram/blob/main/images/Screenshot%202021-07-17%20at%202.32.58%20AM.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![image](https://github.com/gsbakshi/slam-gram/blob/main/images/Screenshot%202021-07-17%20at%202.33.07%20AM.png)
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![image](https://github.com/gsbakshi/slam-gram/blob/main/images/Screenshot%202021-07-17%20at%202.33.16%20AM.png)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+[🏠 Back to Table of Contents](#table-of-contents)
 
-### Making a Progressive Web App
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## :warning: Issues
+* No Like, Comment or Share functionality
+* No actual Sign up/Login functionality
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+[🏠 Back to Table of Contents](#table-of-contents)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<!--- ENDEXCLUDE --->
