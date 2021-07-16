@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import axios from 'axios';
 import faker from 'faker';
 
@@ -22,6 +23,8 @@ const UploadPage = () => {
     const [videoUrl, setVideoUrl] = useState('');
     
     let id = faker.datatype.uuid();
+
+    let history = useHistory();
 
     const handleSubmit = async event => {
         event.preventDefault();
@@ -56,6 +59,7 @@ const UploadPage = () => {
             //                                                                                          *
 
             // return response;
+            history.push('/');
 
         } catch (error) {
             console.error(error);
