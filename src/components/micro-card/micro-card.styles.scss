@@ -17,16 +17,8 @@ $icon-size: 36px;
             background-repeat: no-repeat;
             background-position: center; 
             background-size: cover;
-        }
-        
-        .na-user {
-            width: $icon-size;
-            height: $icon-size;
-            border-radius: $icon-size;
+            color: transparent;
             background-image: url('../../assets/user.png');
-            background-repeat: no-repeat;
-            background-position: center; 
-            background-size: cover;
         }
     }
 
