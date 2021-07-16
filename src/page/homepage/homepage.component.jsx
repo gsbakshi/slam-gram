@@ -7,6 +7,10 @@ import Feed from '../../components/feed/feed.component';
 import FollowersColumn from '../../components/followers-column/followers-column.component';
 import SuggestedBox from '../../components/suggested-box/suggested-box.component';
 
+const addDataHeadingStyle = 'color: #61AFFE; font-weight: bold; font-size: 25px';
+const fetchHeadingStyle = 'color: #F6A130; font-weight: bold; font-size: 25px';
+const responseStyle = 'font-weight: bold';
+
 const HomePage = () => {
 
     const [users, setUsers] = useState(null);
@@ -16,16 +20,39 @@ const HomePage = () => {
     let topFiveNotFollowing;
     let topFiveFollowing;
 
-    //auto populating with dummy data
+    //                                                                auto populating with dummy data
     const addData = async () => {
-        await axios.post('/.netlify/functions/addData')
+        //                                                                                          *
+        console.log('%cAdding User Posts Data', addDataHeadingStyle);
+        console.log('%cFunction /.netlify/functions/addData', responseStyle)
+        //                                                                                          *
+
+        let response = await axios.post('/.netlify/functions/addData');
+
+        //                                                                                          *
+        console.log('%cResponse from Adding Data', responseStyle);
+        console.log(response)
+        //                                                                                          *
+        return response;;
+
     };
 
-    //fetch all the tik-tok posts to your feed
+    //                                                       fetch all the tik-tok posts to your feed
     const fetchData = async () => {
+        //                                                                                          *
+        console.log('%cGetting Fetched Posts', fetchHeadingStyle);
+        console.log('%cFunction /.netlify/functions/posts', responseStyle);
+        //                                                                                          *
+
         const results = await axios.get('/.netlify/functions/posts');
-        console.log(results.data);
+        
+        //                                                                                          *
+        console.log('%cResponse from Fetched Posts', responseStyle);
+        console.log(results.data)
+        //                                                                                          *
+
         setUsers(results.data);
+
     };
 
     //toggle user from followed to unfollowed
@@ -64,7 +91,7 @@ const HomePage = () => {
                     <div className='home-page-container'>
                         <FollowersColumn users={ topFiveFollowing } />
                         <Feed
-                            users={ descendingUsers }
+                            users={ users }
                             toggleFollow={ userToToggle => setUserToToggle(userToToggle) }
                         />
                         <SuggestedBox

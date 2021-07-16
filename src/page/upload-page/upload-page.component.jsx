@@ -7,7 +7,7 @@ import './upload-page.styles.scss';
 import CustomButton from '../../components/custom-buttom/custom-button.component';
 import FormInput from '../../components/form-input/form-input.component';
 
-const createHeadingStyle = 'color: #49CC90; font-weight: bold; font-size: 25px';
+const uploadHeadingStyle = 'color: #49CC90; font-weight: bold; font-size: 25px';
 const responseStyle = 'font-weight: bold';
 
 const UploadPage = () => {
@@ -42,18 +42,20 @@ const UploadPage = () => {
 
         try {
             //                                                                                          *
-            console.log('%cUpload Tik Tok Post', createHeadingStyle);
-            console.log('%cPATH /.netlify/functions/add using AXIOS POST', responseStyle);
+            console.log('%cUpload Tik Tok Post', uploadHeadingStyle);
+            console.log('%cPATH /.netlify/functions/upload using AXIOS POST', responseStyle);
             console.log("%cWith the following BODY = ", responseStyle);
             console.log("%c\t%s", responseStyle, JSON.stringify(data));
             //                                                                                          *
             
-            let response = await axios.post('/.netlify/functions/add', data);
+            let response = await axios.post('/.netlify/functions/upload', data);
             
             //                                                                                          *
-            console.log('%cResponse from Getting Rest Todos', responseStyle);
+            console.log('%cResponse from Upload', responseStyle);
             console.log(response);
             //                                                                                          *
+
+            // return response;
 
         } catch (error) {
             console.error(error);
@@ -84,6 +86,10 @@ const UploadPage = () => {
                                 type='input'
                             />
                         </div>
+                        <span className='note'>
+                            To simulate video upload, you can add a video url in the input from&nbsp;
+                            <a href="https://imgur.com/" target="_blank" rel="noopener noreferrer">imgur</a>
+                        </span>
                     </div>
                     <CustomButton alternate type='submit'>Upload</CustomButton>
                 </form>
