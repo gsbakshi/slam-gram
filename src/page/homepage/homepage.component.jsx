@@ -33,7 +33,7 @@ const HomePage = () => {
         console.log('%cResponse from Adding Data', responseStyle);
         console.log(response)
         //                                                                                          *
-        return response;;
+        return response;
 
     };
 
@@ -81,7 +81,7 @@ const HomePage = () => {
 
         const notFollowing = users.filter((user) => user.is_followed === false);
         const descendingNotFollowing = notFollowing.sort((a, b) => a.likes < b.likes ? 1 : -1);
-        topFiveNotFollowing = descendingNotFollowing.slice(0, 5);
+        topFiveNotFollowing = descendingNotFollowing.slice(0, 5).filter(user => user.username !== 'aniak100');
     }
 
     return (
@@ -91,7 +91,7 @@ const HomePage = () => {
                     <div className='home-page-container'>
                         <FollowersColumn users={ topFiveFollowing } />
                         <Feed
-                            users={ users }
+                            users={ descendingUsers }
                             toggleFollow={ userToToggle => setUserToToggle(userToToggle) }
                         />
                         <SuggestedBox
