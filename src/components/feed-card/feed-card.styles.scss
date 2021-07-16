@@ -44,12 +44,12 @@ $icon-size: 24px;
     }
     
     .video {
-        background-color: wheat;
         height: 100%;
         width: 50%;
         border-radius: 15px;
         align-self: center;
         justify-content: center;
+        object-fit: cover;
 
         @media screen and (max-width: 1200px) {
             width: 80%;
