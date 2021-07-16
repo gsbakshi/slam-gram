@@ -9,7 +9,7 @@ const MicroCard = ({ user }) => (
         </div>
         <div className='user-details'>
             <div className='username'>
-                { user.username }
+                @{ user.username }
             </div>
             <div className='name'>
                 { user.name }

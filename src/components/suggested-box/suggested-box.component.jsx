@@ -24,6 +24,9 @@ const SuggestedBox = ({ suggestedUsers, toggleFollow }) => (
                 }
             </div>
         </div>
+        <span className='note'>
+            Do not click on follow button for @aniak100. Because it will break the app.
+        </span>
     </div>
 );
 
