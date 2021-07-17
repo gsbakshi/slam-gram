@@ -3,7 +3,16 @@
     height: 100%;
     padding: 20px;
 
+    @media screen and (max-width: 800px) {        
+        width: 100vw;
+        padding: 0;
+        margin-bottom: 40px;
+    }
+    
     .followers-column {
+        @media screen and (max-width: 800px) {        
+            padding: 0 40px;
+        }
 
         .followers-title {
             display: flex;
