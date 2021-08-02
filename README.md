@@ -1,7 +1,9 @@
 <!--- STARTEXCLUDE --->
+
+![image](https://github.com/gsbakshi/slam-gram/blob/9db42806c032079d2517291d70a396d974322844/src/assets/logo/cover.png)
 # Slam`Gram - A Tik Tok Clone
 
-<!-- [![Netlify Status](https://api.netlify.com/api/v1/badges/3453c8b9-27ca-4c74-9bc8-929efc89512e/deploy-status)](https://app.netlify.com/sites/astra-todos/deploys) -->
+[![Netlify Status](https://api.netlify.com/api/v1/badges/58c1a6ff-eef7-43b8-a0c2-ea28d187432c/deploy-status)](https://app.netlify.com/sites/slamgram/deploys)
 
 
 A simple Tik-Tok clone in React running on Astra DB that leverages the Document API.
